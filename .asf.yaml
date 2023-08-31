@@ -1,0 +1,16 @@
+github:
+  description: Apache Sling Commons Prometheus Metrics Exporter
+  homepage: https://sling.apache.org
+  labels:
+  - sling
+  - java
+  autolink_jira:
+  - "SLING"
+  - "OAK"
+  - "JCR"
+  - "JCRVLT"
+  - "INFRA"
+  - "FELIX"
+  - "MNG"
+notifications:
+  jira_options: "link"

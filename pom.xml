@@ -25,6 +25,15 @@
     <properties>
         <io.prometheus.simpleclient.version>0.6.0</io.prometheus.simpleclient.version>
     </properties>
+
+
+    <scm>
+      <connection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-commons-metrics-prometheus.git</connection>
+      <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/sling-org-apache-sling-commons-metrics-prometheus.git</developerConnection>
+      <url>https://gitbox.apache.org/repos/asf?p=sling-org-apache-sling-commons-metrics-prometheus.git</url>
+      <tag>HEAD</tag>
+    </scm>
+
     <build>
         <plugins>
             <plugin>

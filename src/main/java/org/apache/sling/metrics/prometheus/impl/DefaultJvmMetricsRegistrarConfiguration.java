@@ -16,23 +16,13 @@
  */
 package org.apache.sling.metrics.prometheus.impl;
 
-import org.osgi.service.component.annotations.Activate;
-import org.osgi.service.component.annotations.Component;
-import org.osgi.service.metatype.annotations.Designate;
+import org.osgi.service.metatype.annotations.AttributeDefinition;
+import org.osgi.service.metatype.annotations.ObjectClassDefinition;
 
-import io.prometheus.client.hotspot.DefaultExports;
+@ObjectClassDefinition(description = "Configuration for the Default Jvm Metrics Registrar", name = "Default Jvm Metrics Registrar")
+@interface DefaultJvmMetricsRegistrarConfiguration {
 
-/**
- * Registers the default JVM metrics with the default registry
- */
-@Component(immediate = true)
-@Designate(ocd = DefaultJvmMetricsRegistrarConfiguration.class)
-public class DefaultJvmMetricsRegistrar {
+    @AttributeDefinition(description = "Enable the export of default jvm metrics to prometheus")
+    boolean enabled() default true;
 
-    @Activate
-    public void activate(DefaultJvmMetricsRegistrarConfiguration config) {
-        if (config.enabled()) {
-            DefaultExports.initialize();
-        }
-    }
 }

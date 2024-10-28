@@ -1,9 +1,9 @@
 github:
-  description: Apache Sling Commons Prometheus Metrics Exporter
-  homepage: https://sling.apache.org
+  description: "Apache Sling Commons Prometheus Metrics Exporter"
+  homepage: "https://sling.apache.org"
   labels:
-  - sling
-  - java
+  - "sling"
+  - "java"
   autolink_jira:
   - "SLING"
   - "OAK"
@@ -14,3 +14,4 @@ github:
   - "MNG"
 notifications:
   jira_options: "link"
+  pullrequests_bot_sonarcloud: "commits@sling.apache.org"
